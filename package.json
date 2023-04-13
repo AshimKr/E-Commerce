@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node ecomm-backend/server.js",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon ecomm-backend/server.js",
     "client": "npm start --prefix ecomm-frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
